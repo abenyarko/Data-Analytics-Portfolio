@@ -1,0 +1,61 @@
+EmployeeID,Age,Department,JobRole,Attrition,Gender,Education,MonthlyIncome,JobLevel,YearsAtCompany,JobSatisfaction,OverTime,WorkLifeBalance,NumCompaniesWorked,DistanceFromHome,EnvironmentSatisfaction,RelationshipSatisfaction,StockOptionLevel,TrainingTimesLastYear
+1,41,Sales,Sales Executive,Yes,Female,2,5993,2,6,4,Yes,1,1,1,2,1,0,6
+2,49,Research & Development,Research Scientist,No,Male,1,5130,1,10,2,No,3,8,1,3,4,2,3
+3,37,Research & Development,Laboratory Technician,Yes,Male,2,2090,1,0,3,Yes,3,6,1,2,2,0,3
+4,33,Research & Development,Research Scientist,No,Female,4,2909,1,8,3,Yes,3,1,3,4,3,3,2
+5,27,Research & Development,Laboratory Technician,No,Male,1,3468,1,2,4,No,3,2,4,1,4,2,5
+6,32,Research & Development,Laboratory Technician,No,Male,2,3068,1,7,1,Yes,2,3,1,3,1,0,3
+7,59,Research & Development,Laboratory Technician,No,Female,3,2670,1,1,3,Yes,2,3,1,21,3,3,4
+8,30,Research & Development,Laboratory Technician,No,Male,1,2693,1,1,4,No,4,24,1,21,4,1,1
+9,38,Research & Development,Manufacturing Director,No,Male,3,9526,3,9,4,No,4,2,3,5,3,3,2
+10,36,Research & Development,Healthcare Representative,No,Male,3,5237,2,7,3,No,2,9,2,14,4,3,5
+11,35,Research & Development,Healthcare Representative,No,Male,3,2426,1,5,3,No,3,19,1,5,4,3,3
+12,29,Research & Development,Research Scientist,No,Male,2,4193,1,9,3,No,4,3,1,7,4,3,3
+13,31,Research & Development,Research Scientist,No,Male,3,2911,1,5,4,No,3,1,1,1,4,4,6
+14,34,Research & Development,Laboratory Technician,No,Male,3,2661,1,16,4,No,4,4,3,5,3,1,5
+15,28,Research & Development,Research Scientist,No,Female,3,2028,1,0,3,No,3,5,1,10,2,3,5
+16,29,Research & Development,Laboratory Technician,No,Male,4,3365,1,3,4,Yes,4,7,2,9,4,4,3
+17,32,Sales,Sales Executive,No,Male,2,4045,2,9,3,No,3,21,0,1,2,4,4
+18,22,Research & Development,Research Scientist,No,Male,2,3167,1,5,3,Yes,3,7,2,3,3,3,5
+19,53,Research & Development,Laboratory Technician,No,Male,3,4379,1,1,4,No,4,6,1,2,4,4,4
+20,38,Research & Development,Research Director,No,Male,5,14460,5,10,4,Yes,3,5,4,7,3,3,5
+21,24,Research & Development,Research Scientist,No,Female,2,2457,1,6,3,No,3,3,1,9,2,4,2
+22,32,Human Resources,Human Resources,No,Male,4,3407,2,3,4,No,4,12,2,5,2,3,5
+23,44,Research & Development,Laboratory Technician,No,Female,1,4924,2,8,4,Yes,3,2,1,3,4,4,3
+24,33,Research & Development,Senior Research Scientist,No,Male,4,7484,3,8,3,No,3,3,1,19,3,4,4
+25,26,Research & Development,Laboratory Technician,No,Female,2,2085,1,9,4,No,3,6,3,5,2,3,5
+26,28,Research & Development,Research Scientist,Yes,Male,2,2571,1,3,4,Yes,3,2,1,16,2,3,3
+27,31,Research & Development,Research Scientist,No,Male,2,7994,3,9,2,No,2,1,1,2,1,2,3
+28,48,Research & Development,Laboratory Technician,Yes,Male,3,4680,2,6,1,Yes,1,3,1,4,3,2,5
+29,36,Research & Development,Senior Research Scientist,No,Male,4,7080,3,10,4,Yes,3,5,2,16,2,3,3
+30,35,Human Resources,Human Resources,No,Male,3,5061,2,7,4,No,3,5,1,7,1,4,3
+31,32,Research & Development,Manufacturing Director,No,Female,3,7941,3,8,4,No,4,8,2,24,3,3,3
+32,26,Research & Development,Laboratory Technician,No,Male,1,1091,1,0,3,Yes,1,8,1,3,3,3,2
+33,29,Research & Development,Research Scientist,No,Male,2,5271,2,10,3,No,3,7,3,8,2,4,3
+34,31,Research & Development,Healthcare Representative,No,Male,2,2635,1,1,3,Yes,3,7,2,3,4,4,3
+35,34,Research & Development,Research Scientist,No,Male,3,2650,1,7,4,No,4,5,1,5,4,3,5
+36,28,Sales,Sales Representative,No,Female,3,2063,1,6,3,Yes,3,6,1,1,2,3,3
+37,38,Research & Development,Research Scientist,No,Male,2,4914,2,10,4,No,4,8,3,14,3,4,3
+38,40,Research & Development,Laboratory Technician,No,Female,3,5671,2,7,3,No,3,3,2,5,3,3,3
+39,27,Research & Development,Laboratory Technician,No,Female,1,2217,1,4,2,No,3,5,1,4,4,3,4
+40,36,Research & Development,Research Scientist,No,Male,3,4687,2,5,3,No,3,9,2,7,4,4,2
+41,44,Research & Development,Senior Research Scientist,No,Male,4,7698,3,10,4,No,3,6,3,5,4,3,5
+42,32,Research & Development,Laboratory Technician,No,Male,2,2986,1,6,3,No,3,4,1,6,2,4,3
+43,50,Research & Development,Research Scientist,No,Male,3,5221,2,5,4,No,3,16,3,9,3,3,3
+44,27,Research & Development,Research Scientist,No,Female,3,3665,1,2,4,Yes,3,9,1,11,4,3,4
+45,41,Research & Development,Laboratory Technician,No,Male,2,3644,1,7,4,No,4,2,2,7,3,4,3
+46,43,Sales,Sales Executive,No,Male,3,7441,2,7,3,No,4,1,2,1,4,4,5
+47,28,Research & Development,Research Scientist,No,Female,4,5056,2,7,4,No,3,1,2,10,3,3,3
+48,37,Research & Development,Research Scientist,No,Male,3,5237,2,10,1,No,2,4,1,12,3,3,4
+49,35,Human Resources,Human Resources,No,Male,3,2490,1,4,3,No,3,7,3,15,3,3,4
+50,27,Research & Development,Research Scientist,No,Female,3,4537,2,8,3,No,3,1,2,6,3,4,2
+51,29,Research & Development,Laboratory Technician,No,Male,1,2306,1,5,4,No,4,6,1,5,4,3,3
+52,32,Sales,Sales Executive,Yes,Female,3,5444,2,4,1,Yes,1,9,0,5,3,2,2
+53,28,Research & Development,Laboratory Technician,No,Male,2,2694,1,6,3,No,3,8,3,4,3,4,4
+54,36,Research & Development,Research Scientist,No,Male,3,4194,1,1,3,No,3,1,1,4,3,4,6
+55,39,Research & Development,Senior Research Scientist,No,Male,2,5765,2,10,4,No,3,7,3,4,4,3,4
+56,34,Research & Development,Research Scientist,No,Male,3,5070,2,8,4,No,3,5,2,7,3,3,3
+57,51,Research & Development,Laboratory Technician,No,Female,1,2490,1,2,2,No,2,7,1,6,3,4,3
+58,40,Research & Development,Healthcare Representative,No,Male,2,4788,2,10,3,No,3,6,3,8,3,4,2
+59,46,Research & Development,Laboratory Technician,No,Male,2,3168,1,4,4,No,4,4,2,5,4,3,3
+60,30,Research & Development,Research Scientist,No,Female,3,4571,2,9,3,No,4,3,1,8,4,4,5

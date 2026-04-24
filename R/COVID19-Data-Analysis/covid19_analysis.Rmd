@@ -1,0 +1,185 @@
+---
+title: "COVID-19 Global Trends Analysis"
+author: "Data Analytics Portfolio"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    highlight: tango
+    code_folding: show
+params:
+  top_n_countries: 10
+  start_date: "2020-01-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo    = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width  = 10,
+  fig.height = 6
+)
+```
+
+## 1. Setup & Data Loading
+
+```{r libraries}
+library(tidyverse)
+library(lubridate)
+library(zoo)
+library(scales)
+library(ggthemes)
+library(DT)
+```
+
+```{r load-data}
+# Johns Hopkins COVID-19 time-series URLs
+base_url  <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
+cases_url  <- paste0(base_url, "time_series_covid19_confirmed_global.csv")
+deaths_url <- paste0(base_url, "time_series_covid19_deaths_global.csv")
+
+# Helper: pivot JHU wide → long format
+load_jhu <- function(url, metric_name) {
+  read_csv(url, show_col_types = FALSE) %>%
+    rename(Province = `Province/State`, Country = `Country/Region`) %>%
+    select(-Lat, -Long) %>%
+    pivot_longer(cols      = -c(Province, Country),
+                 names_to  = "DateStr",
+                 values_to = metric_name) %>%
+    mutate(Date = mdy(DateStr)) %>%
+    select(-DateStr) %>%
+    group_by(Country, Date) %>%
+    summarise(across(all_of(metric_name), sum, na.rm = TRUE), .groups = "drop")
+}
+
+cases  <- load_jhu(cases_url,  "Confirmed")
+deaths <- load_jhu(deaths_url, "Deaths")
+
+covid <- cases %>%
+  left_join(deaths, by = c("Country", "Date")) %>%
+  filter(Date >= ymd(params$start_date)) %>%
+  arrange(Country, Date)
+
+cat("Dataset: ", nrow(covid), "rows |", n_distinct(covid$Country), "countries\n")
+cat("Date range:", format(min(covid$Date)), "→", format(max(covid$Date)), "\n")
+```
+
+## 2. Daily New Cases & Deaths (Global)
+
+```{r global-daily}
+global <- covid %>%
+  group_by(Date) %>%
+  summarise(Confirmed = sum(Confirmed),
+            Deaths    = sum(Deaths)) %>%
+  mutate(
+    NewCases  = pmax(Confirmed - lag(Confirmed, default = 0), 0),
+    NewDeaths = pmax(Deaths    - lag(Deaths,    default = 0), 0),
+    Roll7Cases  = rollmean(NewCases,  k = 7, fill = NA, align = "right"),
+    Roll7Deaths = rollmean(NewDeaths, k = 7, fill = NA, align = "right")
+  )
+
+ggplot(global, aes(x = Date)) +
+  geom_col(aes(y = NewCases), fill = "#aec6e8", alpha = 0.5) +
+  geom_line(aes(y = Roll7Cases), colour = "#1f77b4", linewidth = 1) +
+  scale_y_continuous(labels = comma) +
+  labs(title    = "Global Daily New COVID-19 Cases",
+       subtitle = "Blue line = 7-day rolling average",
+       x = NULL, y = "New Cases") +
+  theme_clean()
+```
+
+```{r global-deaths}
+ggplot(global, aes(x = Date)) +
+  geom_col(aes(y = NewDeaths), fill = "#f5a9a9", alpha = 0.5) +
+  geom_line(aes(y = Roll7Deaths), colour = "#d62728", linewidth = 1) +
+  scale_y_continuous(labels = comma) +
+  labs(title    = "Global Daily New COVID-19 Deaths",
+       subtitle = "Red line = 7-day rolling average",
+       x = NULL, y = "New Deaths") +
+  theme_clean()
+```
+
+## 3. Top Countries by Total Cases
+
+```{r top-countries}
+top_countries <- covid %>%
+  group_by(Country) %>%
+  summarise(TotalCases  = max(Confirmed),
+            TotalDeaths = max(Deaths)) %>%
+  mutate(CFR = TotalDeaths / TotalCases) %>%
+  slice_max(TotalCases, n = params$top_n_countries)
+
+datatable(
+  top_countries %>%
+    mutate(
+      TotalCases  = comma(TotalCases),
+      TotalDeaths = comma(TotalDeaths),
+      CFR         = percent(CFR, accuracy = 0.01)
+    ),
+  caption  = paste("Top", params$top_n_countries, "Countries by Total Confirmed Cases"),
+  rownames = FALSE,
+  options  = list(pageLength = 10, dom = "t")
+)
+```
+
+## 4. Case Trajectory Comparison
+
+```{r trajectory-plot}
+top_names <- top_countries %>% pull(Country)
+
+covid %>%
+  filter(Country %in% top_names) %>%
+  group_by(Country) %>%
+  mutate(NewCases = pmax(Confirmed - lag(Confirmed, default = 0), 0),
+         Roll7    = rollmean(NewCases, k = 7, fill = NA, align = "right")) %>%
+  ggplot(aes(x = Date, y = Roll7, colour = Country)) +
+  geom_line(linewidth = 0.8, na.rm = TRUE) +
+  scale_y_continuous(labels = comma) +
+  scale_colour_tableau(palette = "Tableau 10") +
+  labs(title    = paste("7-Day Rolling Average New Cases —",
+                        "Top", params$top_n_countries, "Countries"),
+       x = NULL, y = "New Cases (7-day avg)", colour = NULL) +
+  theme_clean() +
+  theme(legend.position = "bottom")
+```
+
+## 5. Case-Fatality Rate Over Time
+
+```{r cfr-trend}
+covid %>%
+  filter(Country %in% head(top_names, 5)) %>%
+  mutate(CFR = ifelse(Confirmed > 0, Deaths / Confirmed, NA)) %>%
+  ggplot(aes(x = Date, y = CFR, colour = Country)) +
+  geom_line(linewidth = 0.8, na.rm = TRUE) +
+  scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  scale_colour_tableau() +
+  labs(title    = "Case-Fatality Rate (CFR) Over Time — Top 5 Countries",
+       subtitle = "CFR = Total Deaths / Total Confirmed",
+       x = NULL, y = "CFR (%)", colour = NULL) +
+  theme_clean() +
+  theme(legend.position = "bottom")
+```
+
+## 6. Summary
+
+```{r summary-table}
+summary_stats <- global %>%
+  summarise(
+    `Total Confirmed Cases`  = comma(max(Confirmed)),
+    `Total Deaths`           = comma(max(Deaths)),
+    `Global CFR`             = percent(max(Deaths) / max(Confirmed), accuracy = 0.01),
+    `Peak Daily New Cases`   = comma(max(NewCases,  na.rm = TRUE)),
+    `Peak Daily New Deaths`  = comma(max(NewDeaths, na.rm = TRUE))
+  ) %>%
+  pivot_longer(everything(), names_to = "Metric", values_to = "Value")
+
+knitr::kable(summary_stats, align = c("l", "r"), caption = "Global COVID-19 Summary Statistics")
+```
+
+---
+
+*Data source: Johns Hopkins University CSSE COVID-19 Dataset.  
+Report generated: `r Sys.Date()`*
