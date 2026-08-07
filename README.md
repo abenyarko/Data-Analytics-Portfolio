@@ -1,4 +1,3 @@
-# Data-Analytics-Portfolio
 **# Data Analytics Portfolio**
 
 **A collection of end-to-end analytics projects demonstrating expertise in statistical analysis, survey methodology, business intelligence, predictive modeling, and executive decision-support systems.**
