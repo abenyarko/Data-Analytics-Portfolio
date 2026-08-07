@@ -23,4 +23,4 @@ An interactive Power BI dashboard analyzing global COVID-19 trends across 198 co
 - 🎨 Conditional Formatting
 - 📋 Executive Dashboard Design
 
-🔗 **Explore the Project:** *(Repository link once created)*
+🔗 **Explore the Project:** **https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI**
