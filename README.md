@@ -6,7 +6,7 @@
 # 🏆 Sports Wellness Analytics
 <p align="center">
   <a href="https://github.com/abenyarko/Sports-Wellness-Analytics">
-    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
+    <img src="" width="700">
   </a>
 </p>
 
@@ -32,7 +32,7 @@ An end-to-end analytics solution integrating survey-weighted statistics, predict
 ## 🌍 Global COVID-19 Analytics Dashboard
 <p align="center">
   <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
-    <img src="images/covid-dashboard.png" width="700">
+    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
   </a>
 </p>
 
