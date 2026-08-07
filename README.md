@@ -6,7 +6,7 @@
 # 🏆 Sports Wellness Analytics
 <p align="center">
   <a href="https://github.com/abenyarko/Sports-Wellness-Analytics">
-    <img src="" width="700">
+    <img src="https://github.com/abenyarko/Sports-Wellness-Analytics/blob/main/visuals/Season-Overview.png" width="700">
   </a>
 </p>
 
