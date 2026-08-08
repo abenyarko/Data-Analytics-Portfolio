@@ -92,3 +92,31 @@ Planned Enhancement:
 - ⚙️ Data Acquisition & ETL Pipeline Design
 
 🔗 **[Explore the Global Economic Indicators Dashboard Repository](https://github.com/abenyarko/Global-Economic-Indicators-Dashboard)**
+
+
+# 📊 Sales Performance Analytics Dashboard
+
+<p align="center">
+  <a href="https://github.com/abenyarko/Sales-Performance-Analytics-Dashboard">
+    <img src="https://github.com/abenyarko/Sales-performance-analytics-dashboard/blob/main/sales-dashboard-overview.png" width="700">
+  </a>
+</p>
+
+An interactive Power BI dashboard built on the AdventureWorks SQL Server data warehouse. The project integrates SQL Server, dimensional modeling, semantic modeling, DAX, drill-through navigation, and executive reporting to analyze salesperson, product, and regional sales performance.
+
+**Technologies:** SQL Server • Power BI • DAX • Power Query • Semantic Model • Star Schema
+
+### Skills Demonstrated
+
+- 🗄 SQL Server Integration
+- 📊 Power BI Dashboard Development
+- 📈 DAX Measures & KPI Design
+- 🏗 Star Schema Data Modeling
+- 🔄 Semantic Model Development
+- 📅 Time Intelligence
+- 👤 Drill-through Navigation
+- 📋 Executive Dashboard Design
+- 📉 Sales Performance Analytics
+
+🔗 **[Explore the Sales Performance Analytics Dashboard Repository](https://github.com/abenyarko/Sales-performance-analytics-dashboard)**
+
