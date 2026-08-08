@@ -50,3 +50,45 @@ An interactive Power BI dashboard analyzing global COVID-19 trends across 198 co
 - 📋 Executive Dashboard Design
 
 🔗 🔗 **[Explore the Global COVID-19 Analytics Repository](https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI)**
+
+
+# Economic and Business Analytics
+
+# 🌎 Global Economic Indicators Dashboard
+
+<p align="center">
+  <a href="https://github.com/abenyarko/Global-Economic-Indicators-Dashboard">
+    <img src="https://github.com/abenyarko/Global-Economic-Indicators-Dashboard/blob/main/global-economic-dashboard.png" width="700">
+  </a>
+</p>
+
+An interactive Power BI dashboard analyzing global economic indicators using World Bank data. The project combines GDP, GDP per capita, population, population density, regional comparisons, and geographic visualizations to support economic analysis and executive decision-making.
+
+The project is designed as an end-to-end analytics solution with a roadmap to integrate directly with the **World Bank API**, enabling automated data acquisition, ETL workflows, and repeatable dashboard refreshes using the latest publicly available economic indicators.
+
+## Data Pipeline
+
+Current Version:
+- World Bank economic indicators imported into Power BI for analysis.
+
+Planned Enhancement:
+- Direct integration with the World Bank REST API
+- Automated data extraction and transformation (ETL)
+- Refreshable analytics pipeline using current economic data
+- Production-ready workflow for scalable reporting
+
+**Technologies:** Power BI • DAX • Power Query • Data Modeling • REST APIs • World Bank API (Planned)
+
+### Skills Demonstrated
+- 🌍 Interactive Power BI Dashboard Development
+- 📈 DAX Measures & KPI Design
+- 🗺 Geographic Visualization
+- 📊 Comparative Economic Analysis
+- 📅 Time-Series Trend Analysis
+- 🔄 Drill-through Navigation
+- 🎨 Conditional Formatting
+- 📋 Interactive Reporting & Dashboard Design
+- 🔌 REST API Integration (World Bank API)
+- ⚙️ Data Acquisition & ETL Pipeline Design
+
+🔗 **[Explore the Global Economic Indicators Dashboard Repository](https://github.com/abenyarko/Global-Economic-Indicators-Dashboard)**
