@@ -93,6 +93,7 @@ Planned Enhancement:
 
 🔗 **[Explore the Global Economic Indicators Dashboard Repository](https://github.com/abenyarko/Global-Economic-Indicators-Dashboard)**
 
+# Business Intelligence
 
 # 📊 Sales Performance Analytics Dashboard
 
@@ -120,3 +121,30 @@ An interactive Power BI dashboard built on the AdventureWorks SQL Server data wa
 
 🔗 **[Explore the Sales Performance Analytics Dashboard Repository](https://github.com/abenyarko/Sales-performance-analytics-dashboard)**
 
+# Demographic Analytics
+
+# 🇺🇸 U.S. Census Population Analytics
+
+<p align="center">
+  <a href="https://github.com/abenyarko/US-Census-Population-Analytics">
+    <img src="https://github.com/abenyarko/US-Census-Population-Analytics/blob/main/census-overview.png" width="700">
+  </a>
+</p>
+
+An interactive Power BI dashboard analyzing U.S. Census population trends from 1950–2015. The project combines demographic analysis, geographic visualization, DAX calculations, semantic modeling, interactive tooltips, and executive dashboard design to explore long-term population growth across all 50 states.
+
+**Technologies:** Power BI • DAX • Power Query • Data Modeling • Semantic Model
+
+### Skills Demonstrated
+
+- 📊 Power BI Dashboard Development
+- 📈 DAX Measures & Calculated Columns
+- 🏗 Data Modeling
+- 🔄 Semantic Model Development
+- 💡 Custom Report Tooltips
+- 🗺 Geographic Visualization
+- 📅 Longitudinal Trend Analysis
+- 📉 Population Growth Analytics
+- 🎨 Interactive Dashboard Design
+
+🔗 **[Explore the U.S. Census Population Analytics Repository](https://github.com/abenyarko/US-Census-Population-Analytics)**
