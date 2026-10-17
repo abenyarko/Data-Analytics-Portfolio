@@ -3,6 +3,26 @@
 **Each project includes documentation, methodology, code, dashboards, and business recommendations to illustrate the complete analytics lifecycle.**
 # Sports Analytics and Human Performance
 
+# 🥍 Athlete Wellness & Readiness Analytics — 2026
+
+An end-to-end longitudinal analytics solution examining **1,445 athlete wellness survey responses** through individualized baseline standardization, survey-weighted statistical analysis, bootstrap estimation, and regression modeling. The project evaluates within-season wellness patterns, athlete-level variation, and position-specific differences to support evidence-based athlete monitoring and operational decision-making.
+
+**Technologies:** R • tidyverse • survey • ggplot2 • Statistical Modeling • GitHub
+
+### Skills Demonstrated
+
+- 📊 Longitudinal Data Analysis & Repeated Measures
+- 📈 Individualized Baseline Analysis & Z-Score Standardization
+- 📉 Survey-Weighted Regression Modeling & Statistical Inference
+- 🧮 Bootstrap Estimation (1,000 Replicates) & Rao–Scott Chi-Square Testing
+- 📋 Survey Methodology & Complex Survey Design
+- 🔄 Data Cleaning, Transformation & Quality Validation
+- 📊 Statistical Visualization & Position-Specific Trend Analysis
+- 📑 Executive Reporting & Technical Documentation
+- 🏛 Evidence-Based Decision Support System Design
+
+🔗 **[Explore the Athlete Wellness & Readiness Analytics — 2026 Repository](https://github.com/abenyarko/Athlete-Wellness-Readiness-Analytics-2026)**
+
 # 🏆 Sports Wellness Analytics
 <p align="center">
   <a href="https://github.com/abenyarko/Sports-Wellness-Analytics">
@@ -25,31 +45,6 @@ An end-to-end analytics solution integrating survey-weighted statistics, predict
 - 🏛 Decision Support System Design
 
 🔗 🔗 **[Explore the Sports Wellness Analytics Repository](https://github.com/abenyarko/Sports-Wellness-Analytics)**
-
-
-# Public Health Analytics
-
-## 🌍 Global COVID-19 Analytics Dashboard
-<p align="center">
-  <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
-    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
-  </a>
-</p>
-
-An interactive Power BI dashboard analyzing global COVID-19 trends across 198 countries. The project combines KPI reporting, drill-through navigation, geographic visualization, heatmaps, and time-series analysis to support executive decision-making and data exploration.
-
-**Technologies:** Power BI • DAX • Power Query • Data Modeling
-
-### Skills Demonstrated
-- 📊 Power BI Dashboard Development
-- 📈 DAX Measures & KPIs
-- 🌍 Geographic Visualization
-- 📅 Time-Series Analysis
-- 🔄 Drill-through Navigation
-- 🎨 Conditional Formatting
-- 📋 Executive Dashboard Design
-
-🔗 🔗 **[Explore the Global COVID-19 Analytics Repository](https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI)**
 
 
 # Economic and Business Analytics
@@ -93,6 +88,7 @@ Planned Enhancement:
 
 🔗 **[Explore the Global Economic Indicators Dashboard Repository](https://github.com/abenyarko/Global-Economic-Indicators-Dashboard)**
 
+
 # Business Intelligence
 
 # 📊 Sales Performance Analytics Dashboard
@@ -120,6 +116,32 @@ An interactive Power BI dashboard built on the AdventureWorks SQL Server data wa
 - 📉 Sales Performance Analytics
 
 🔗 **[Explore the Sales Performance Analytics Dashboard Repository](https://github.com/abenyarko/Sales-performance-analytics-dashboard)**
+
+
+# Public Health Analytics
+
+## 🌍 Global COVID-19 Analytics Dashboard
+<p align="center">
+  <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
+    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
+  </a>
+</p>
+
+An interactive Power BI dashboard analyzing global COVID-19 trends across 198 countries. The project combines KPI reporting, drill-through navigation, geographic visualization, heatmaps, and time-series analysis to support executive decision-making and data exploration.
+
+**Technologies:** Power BI • DAX • Power Query • Data Modeling
+
+### Skills Demonstrated
+- 📊 Power BI Dashboard Development
+- 📈 DAX Measures & KPIs
+- 🌍 Geographic Visualization
+- 📅 Time-Series Analysis
+- 🔄 Drill-through Navigation
+- 🎨 Conditional Formatting
+- 📋 Executive Dashboard Design
+
+🔗 🔗 **[Explore the Global COVID-19 Analytics Repository](https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI)**
+
 
 # Demographic Analytics
 
