@@ -46,6 +46,69 @@ An end-to-end analytics solution integrating survey-weighted statistics, predict
 
 🔗 🔗 **[Explore the Sports Wellness Analytics Repository](https://github.com/abenyarko/Sports-Wellness-Analytics)**
 
+# Public Health Analytics
+
+## 🏘️ Montgomery County Housing Affordability Analysis
+
+<p align="center">
+  <a href="https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis">
+    <img src="https://raw.githubusercontent.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/main/images/montgomery_housing_burden_categorical.png"
+         width="700"
+         alt="Montgomery County Severe Rental Housing Cost Burden">
+  </a>
+</p>
+
+An end-to-end population health and geospatial analytics project examining severe rental housing cost burden across **232 census tracts** in Montgomery County, Maryland, using the 2020–2024 American Community Survey (ACS).
+
+The analysis identified an estimated **32,527 severely rent-burdened households (25.2%)** and demonstrated how geographic burden rates and affected-household counts provide complementary insights for community health needs assessments, population health planning, and outreach strategies.
+
+The project integrates public data acquisition, Census API validation, statistical analysis, geospatial visualization, sampling uncertainty assessment, and executive reporting to support evidence-informed decision-making.
+
+**Technologies:** R • tidyverse • tidycensus • sf • ggplot2 • Census API • R Markdown • GitHub
+
+### Skills Demonstrated
+
+- 🏥 Population Health Analytics
+- 🏘️ Social Determinants of Health (SDOH)
+- 🔌 REST API Integration & Public Data Acquisition
+- 📋 American Community Survey (ACS) Analysis
+- 🗺️ Geospatial Analysis & Choropleth Mapping
+- 📊 Descriptive Statistical Analysis
+- 📈 Comparative Rate and Count Analysis
+- 🧮 Sampling Uncertainty & Margin-of-Error Assessment
+- 🔄 Data Cleaning, Transformation & Quality Validation
+- 📑 Reproducible Research & Executive Reporting
+- 🏛 Evidence-Based Decision Support
+- 🤝 Community Health Needs Assessment
+
+🔗 **[Explore the Montgomery County Housing Affordability Analysis Repository](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis)**
+
+📄 **[View the Executive Analytical Report](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/blob/main/docs/Housing-Affordability-and-Healthcare-Access-Montgomery-County.pdf)**
+
+
+
+## 🌍 Global COVID-19 Analytics Dashboard
+<p align="center">
+  <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
+    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
+  </a>
+</p>
+
+An interactive Power BI dashboard analyzing global COVID-19 trends across 198 countries. The project combines KPI reporting, drill-through navigation, geographic visualization, heatmaps, and time-series analysis to support executive decision-making and data exploration.
+
+**Technologies:** Power BI • DAX • Power Query • Data Modeling
+
+### Skills Demonstrated
+- 📊 Power BI Dashboard Development
+- 📈 DAX Measures & KPIs
+- 🌍 Geographic Visualization
+- 📅 Time-Series Analysis
+- 🔄 Drill-through Navigation
+- 🎨 Conditional Formatting
+- 📋 Executive Dashboard Design
+
+🔗 🔗 **[Explore the Global COVID-19 Analytics Repository](https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI)**
+
 
 # Economic and Business Analytics
 
@@ -117,69 +180,6 @@ An interactive Power BI dashboard built on the AdventureWorks SQL Server data wa
 
 🔗 **[Explore the Sales Performance Analytics Dashboard Repository](https://github.com/abenyarko/Sales-performance-analytics-dashboard)**
 
-
-# Public Health Analytics
-
-## 🏘️ Montgomery County Housing Affordability Analysis
-
-<p align="center">
-  <a href="https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis">
-    <img src="https://raw.githubusercontent.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/main/images/montgomery_housing_burden_categorical.png"
-         width="700"
-         alt="Montgomery County Severe Rental Housing Cost Burden">
-  </a>
-</p>
-
-An end-to-end population health and geospatial analytics project examining severe rental housing cost burden across **232 census tracts** in Montgomery County, Maryland, using the 2020–2024 American Community Survey (ACS).
-
-The analysis identified an estimated **32,527 severely rent-burdened households (25.2%)** and demonstrated how geographic burden rates and affected-household counts provide complementary insights for community health needs assessments, population health planning, and outreach strategies.
-
-The project integrates public data acquisition, Census API validation, statistical analysis, geospatial visualization, sampling uncertainty assessment, and executive reporting to support evidence-informed decision-making.
-
-**Technologies:** R • tidyverse • tidycensus • sf • ggplot2 • Census API • R Markdown • GitHub
-
-### Skills Demonstrated
-
-- 🏥 Population Health Analytics
-- 🏘️ Social Determinants of Health (SDOH)
-- 🔌 REST API Integration & Public Data Acquisition
-- 📋 American Community Survey (ACS) Analysis
-- 🗺️ Geospatial Analysis & Choropleth Mapping
-- 📊 Descriptive Statistical Analysis
-- 📈 Comparative Rate and Count Analysis
-- 🧮 Sampling Uncertainty & Margin-of-Error Assessment
-- 🔄 Data Cleaning, Transformation & Quality Validation
-- 📑 Reproducible Research & Executive Reporting
-- 🏛 Evidence-Based Decision Support
-- 🤝 Community Health Needs Assessment
-
-🔗 **[Explore the Montgomery County Housing Affordability Analysis Repository](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis)**
-
-📄 **[View the Executive Analytical Report](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/blob/main/docs/Housing-Affordability-and-Healthcare-Access-Montgomery-County.pdf)**
-
-
-
-## 🌍 Global COVID-19 Analytics Dashboard
-<p align="center">
-  <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
-    <img src="https://github.com/abenyarko/Data-Analytics-Portfolio/blob/main/covid-dashboard.png" width="700">
-  </a>
-</p>
-
-An interactive Power BI dashboard analyzing global COVID-19 trends across 198 countries. The project combines KPI reporting, drill-through navigation, geographic visualization, heatmaps, and time-series analysis to support executive decision-making and data exploration.
-
-**Technologies:** Power BI • DAX • Power Query • Data Modeling
-
-### Skills Demonstrated
-- 📊 Power BI Dashboard Development
-- 📈 DAX Measures & KPIs
-- 🌍 Geographic Visualization
-- 📅 Time-Series Analysis
-- 🔄 Drill-through Navigation
-- 🎨 Conditional Formatting
-- 📋 Executive Dashboard Design
-
-🔗 🔗 **[Explore the Global COVID-19 Analytics Repository](https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI)**
 
 
 # Demographic Analytics
