@@ -120,6 +120,45 @@ An interactive Power BI dashboard built on the AdventureWorks SQL Server data wa
 
 # Public Health Analytics
 
+## 🏘️ Montgomery County Housing Affordability Analysis
+
+<p align="center">
+  <a href="https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis">
+    <img src="https://raw.githubusercontent.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/main/images/montgomery_housing_burden_categorical.png"
+         width="700"
+         alt="Montgomery County Severe Rental Housing Cost Burden">
+  </a>
+</p>
+
+An end-to-end population health and geospatial analytics project examining severe rental housing cost burden across **232 census tracts** in Montgomery County, Maryland, using the 2020–2024 American Community Survey (ACS).
+
+The analysis identified an estimated **32,527 severely rent-burdened households (25.2%)** and demonstrated how geographic burden rates and affected-household counts provide complementary insights for community health needs assessments, population health planning, and outreach strategies.
+
+The project integrates public data acquisition, Census API validation, statistical analysis, geospatial visualization, sampling uncertainty assessment, and executive reporting to support evidence-informed decision-making.
+
+**Technologies:** R • tidyverse • tidycensus • sf • ggplot2 • Census API • R Markdown • GitHub
+
+### Skills Demonstrated
+
+- 🏥 Population Health Analytics
+- 🏘️ Social Determinants of Health (SDOH)
+- 🔌 REST API Integration & Public Data Acquisition
+- 📋 American Community Survey (ACS) Analysis
+- 🗺️ Geospatial Analysis & Choropleth Mapping
+- 📊 Descriptive Statistical Analysis
+- 📈 Comparative Rate and Count Analysis
+- 🧮 Sampling Uncertainty & Margin-of-Error Assessment
+- 🔄 Data Cleaning, Transformation & Quality Validation
+- 📑 Reproducible Research & Executive Reporting
+- 🏛 Evidence-Based Decision Support
+- 🤝 Community Health Needs Assessment
+
+🔗 **[Explore the Montgomery County Housing Affordability Analysis Repository](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis)**
+
+📄 **[View the Executive Analytical Report](https://github.com/abenyarko/Montgomery-County-Housing-Affordability-Analysis/blob/main/docs/Housing-Affordability-and-Healthcare-Access-Montgomery-County.pdf)**
+
+
+
 ## 🌍 Global COVID-19 Analytics Dashboard
 <p align="center">
   <a href="https://github.com/abenyarko/Global-COVID-19-Trends-Analysis-with-Power-BI">
